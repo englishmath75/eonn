@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 테트리스 게임</title>
+    <style>
+        /* CSS 영역: 게임의 디자인을 담당합니다 */
+        body {
+            background: #1a1a2e;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            background: #16213e;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            border: 2px solid #0f3460;
+        }
+
+        canvas {
+            border: 4px solid #e94560;
+            background-color: #000;
+            box-shadow: 0 0 10px #e94560;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 150px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #e94560;
+            text-shadow: 2px 2px #533483;
+            letter-spacing: 5px;
+        }
+
+        #score {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4eeaff;
+        }
+
+        .controls {
+            font-size: 0.9em;
+            color: #999;
+            line-height: 1.6;
+            background: rgba(0,0,0,0.3);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            background: #e94560;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff5e78;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
